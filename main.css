@@ -1,0 +1,21 @@
+.keybd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30vw;
+  padding: 2rem 0;
+}
+
+.key {
+  border: 1px solid black;
+}
+
+.black-note {
+  color: white;
+  background-color: black;
+}
+
+.white-note {
+  color: black;
+  background-color: white;
+}

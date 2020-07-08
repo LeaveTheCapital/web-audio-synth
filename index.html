@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Website</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Henry & James' Synthesizer</h1>
+    <button id="start">start</button> <button id="stop">stop</button>
+    <button id="sine">sine</button> <button id="square">square</button>
+    <button id="sawtooth">sawtooth</button>
+    <button id="triangle">triangle</button>
+    <div id="musical-keyboard" class="keybd"></div>
+    <p>frequency</p>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="100"
+        max="2200"
+        value="400"
+        class="slider"
+        id="frequency-slider"
+      />
+    </div>
+    <p>distortion</p>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="1000"
+        value="400"
+        class="slider"
+        id="distortion-slider"
+      />
+    </div>
+    <p>filter</p>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="1000"
+        value="400"
+        class="slider"
+        id="filter-slider"
+      />
+    </div>
+    <p>mod gain</p>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="30"
+        class="slider"
+        id="modgain-slider"
+      />
+    </div>
+    <p>mod freq</p>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="30"
+        class="slider"
+        id="modfreq-slider"
+      />
+    </div>
+    <script src="node_modules/webmidi/webmidi.min.js"></script>
+    <!-- <script src="midi.js"></script> -->
+    <script src="audio.js"></script>
+  </body>
+</html>
